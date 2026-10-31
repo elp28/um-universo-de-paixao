@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071329">
+  <meta name="description" content="Um céu feito de lembranças, sentimentos e tudo o que ainda vamos viver. De Erick, para Rafaela.">
+  <title>Um universo de paixão · Para Rafaela</title>
+  <link rel="icon" href="assets/star.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/content.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#sky">Pular para as estrelas</a>
+  <canvas id="stardust" aria-hidden="true"></canvas>
+  <div class="nebula" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="monogram" href="#home" aria-label="Erick e Rafaela, início">e <span>✧</span> r</a>
+    <span class="dedication">UM CÉU SÓ NOSSO</span>
+    <div class="settings">
+      <button id="sound" aria-pressed="false" title="Ativar sons suaves">♫ <span>Som desligado</span></button>
+      <button id="motion" aria-pressed="false" title="Pausar animações">◌ <span>Pausar movimento</span></button>
+    </div>
+  </header>
+  <main id="home">
+    <section class="intro" aria-labelledby="title">
+      <p class="eyebrow"><span></span> DE ERICK, PARA RAFAELA <span></span></p>
+      <h1 id="title">Um universo<br>de <em>paixão</em><span class="title-star" aria-hidden="true">✧</span></h1>
+      <p class="intro-copy">Se o que sinto por você fosse céu,<br>não haveria noite sem estrelas.</p>
+      <a class="explore" href="#sky">Explore o nosso céu <span aria-hidden="true">↓</span></a>
+    </section>
+    <section class="sky" id="sky" tabindex="-1" aria-label="Nossas três constelações">
+      <div class="sky-heading"><span>TOQUE EM UMA ESTRELA. ENCONTRE UM PEDAÇO DE NÓS.</span><span id="count">00 / 09 DESCOBERTAS</span></div>
+      <div class="constellations" id="constellations"></div>
+      <div class="final-orbit">
+        <div class="orbit-ring" aria-hidden="true"></div>
+        <button id="final-star" aria-disabled="true" aria-describedby="unlock-note"><span class="final-spark" aria-hidden="true">✧</span><span class="final-title">Nossa eternidade</span><span class="final-meta">A ÚLTIMA ESTRELA</span></button>
+        <p id="unlock-note">Nove estrelas guardam o caminho até esta.</p>
+      </div>
+      <p id="status" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+    </section>
+    <footer><span>Todo o infinito, e ainda você.</span><span>Com amor, <em>Erick</em></span><button id="restart">Recomeçar a descoberta</button></footer>
+  </main>
+  <dialog id="memory" aria-labelledby="memory-title">
+    <button class="close" id="close" aria-label="Fechar carta e voltar ao céu">×</button>
+    <div class="memory-layout">
+      <figure class="memory-photo"><img id="photo" alt="" src="assets/images/foto-01.jpg"><figcaption id="photo-caption">Um instante nosso. Um lugar no infinito.</figcaption></figure>
+      <article class="letter">
+        <p class="eyebrow" id="category"></p>
+        <h2 id="memory-title" tabindex="-1"></h2>
+        <div class="letter-rule" aria-hidden="true">✧</div>
+        <div id="letter-text"></div>
+        <p class="signature">Com todo meu coração,<br><em>Erick</em></p>
+        <div class="letter-nav"><span id="letter-number"></span><button id="next">Próxima estrela <span aria-hidden="true">↗</span></button></div>
+      </article>
+    </div>
+  </dialog>
+  <noscript><p class="no-js">Para abrir as estrelas, ative o JavaScript no navegador. Todas as cartas também estão no arquivo TEXTOS.txt deste presente.</p></noscript>
+</body>
+</html>
